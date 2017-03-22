@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+if test $(uname) == "FreeBSD" ; then
+
+echo "Are you sure you wish to install this software? yes/no, no default"
+read input
+
+if test ${input:0:1} == "y" || test ${input:0:1} == "Y"; then
+	echo "Okay, now tell me what your preferred network interface is."
+	read netif
+	sed -e "s/\\\%\\\%NETIF\\\%\\\%/${netif}/g" ./tmux.conf > ~/.tmux.conf
+	cp ./bitrate.tcl ~/totalbytes.tcl
+else
+	echo "Ja mata\!"
+	exit
+fi
+else
+echo "This software requires FreeBSD to function correctly at this time."
+fi
