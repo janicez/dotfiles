@@ -8,7 +8,7 @@ read input
 if test ${input:0:1} == "y" || test ${input:0:1} == "Y"; then
 	echo "Okay, now tell me what your preferred network interface is."
 	read netif
-	sed -e "s/\\\%\\\%NETIF\\\%\\\%/${netif}/g" ./tmux.conf > ~/.tmux.conf
+	sed -e "s/\\\%\\\%NETIF\\\%\\\%/${netif}/g" ./tmux.conf.in > ~/.tmux.conf
 	cp ./bitrate.tcl ~/totalbytes.tcl
 else
 	echo "Ja mata\!"
