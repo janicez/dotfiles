@@ -10,6 +10,7 @@ if test ${input:0:1} == "y" || test ${input:0:1} == "Y"; then
 	read netif
 	sed -e "s/\\\%\\\%NETIF\\\%\\\%/${netif}/g" ./tmux.conf.in > ~/.tmux.conf
 	cp ./bitrate.tcl ~/totalbytes.tcl
+	cp ./memorystats.tcl ~/memorystats.tcl
 else
 	echo "Ja mata\!"
 	exit
