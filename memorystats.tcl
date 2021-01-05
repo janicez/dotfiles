@@ -3,7 +3,7 @@
 set license {
 BSD 3-clause
 
-Copyright © 2021 Umbrellix (Ellenor Malik)
+Copyright © 2021 Umbrellix (Ellenor Bjornsdottir)
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 

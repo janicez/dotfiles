@@ -1,4 +1,4 @@
-# Dotfiles on janicez' freebsd systems
+# Dotfiles on Ellenor' freebsd systems
 
 Currently, only a .tmux.conf showing free, used, total memory in mega
 binary octets (equal to mega binary bytes on systems with 8-bit bytes)
